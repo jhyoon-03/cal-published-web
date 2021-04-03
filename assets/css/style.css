@@ -1,0 +1,468 @@
+/* eliminate white border around website by calling body & html tags */
+body {
+    margin: 0;
+}
+html {
+    margin: 0;
+}
+
+/* home page */
+#title {
+    margin-left: 15px;
+    font-size: 30px;
+    color: #FF4545;
+}
+
+#name {
+    color: #FFFFFF;
+    font-family: 'Noto Sans TC';
+    font-size: 50px;
+}
+
+#blurb {
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-size: 15px;
+}
+
+.container1 {
+    position: relative;
+    text-align: left;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 125px;
+    left: 70px;
+}
+
+
+.wow1 {
+    margin-bottom: 300px;
+    position: absolute;
+}
+.wow2 {
+    margin-bottom: 300px;
+    margin-left: 10px;
+    position: absolute;
+}
+.pic-center {
+    display: block;
+    margin-left: 0px;
+    margin-right: 0px;
+    max-width: 100%;
+    max-height: 100%;
+    filter: brightness(90%);
+}
+
+/* logo */
+
+#logo {
+    top: 20px;
+    left: 30px;
+    font-family: 'Noto Sans TC';
+    font-size: 30px;
+    color: white;
+    position: fixed;
+}
+
+#linkedinButton {
+    border: none;
+    background: none;
+}
+
+#linkedinButton:hover {
+    cursor: pointer;
+}
+
+#emailButton {
+    border: none;
+    background: none;
+}
+
+#emailButton:hover {
+    cursor: pointer;
+}
+
+
+/* background */
+.container2 {
+    background-color: #151515;
+    width: 100%;
+    height: 700px;
+}
+
+#background2 {
+    color: white;
+    padding-top: 7.5%;
+    padding-left: 22%;
+    padding-right: 22%;
+}
+
+.heading {
+    font-family: 'Roboto';
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#content {
+    font-family: 'Roboto';
+    font-size: 15px;
+    text-align: left;
+}
+
+/* projects */
+.container3 {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 1000px;
+}
+
+#background3 {
+    color: black;
+    padding-top: 5%;
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+#projects {
+    font-family: 'Roboto';
+    font-size: 50px;
+    text-align: center;
+}
+
+#projects2 {
+    font-family: 'Roboto';
+    font-size: 30px;
+    text-align: center;
+}
+
+
+#appleButton {
+    margin-top: 10px;
+    margin-left: 10px; 
+    border: none;
+    background: none;
+} 
+
+#appleButton:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#orangeButton {
+    margin-top: 10px;
+    margin-left: 10px; 
+    border: none;
+    background: none;
+} 
+
+#orangeButton:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#bananasButton {
+    margin-top: 10px;
+    margin-left: 10px; 
+    border: none;
+    background: none;
+} 
+
+#bananasButton:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* VERSION 1 */
+#carousel,
+.carousel-image {
+  /* width: 450px;
+  height: 255px; */
+  width: 650px;
+  height: 555px;
+  margin: auto;
+  /* margin-left: 50%; */
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.carousel-image {
+    display: flex;
+    /* flex-direction: row; */
+    margin-right: 650px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* justify-content: space-between; */
+}
+
+.some-text {
+  width: 350px;
+  height: 555px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  font-family: 'Roboto';
+  margin-left: 70px;
+}
+
+.some-text2 {
+    width: 550px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    font-family: 'Roboto';
+    margin-left: 150px;
+  }
+
+.title {
+  color: black;
+  font-size: 30px;
+  width: 380px;
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.role {
+  color: #6F7170;
+  font-size: 20px;
+  width: 380px;
+  margin-left: 40px;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.explain {
+    color: black;
+    font-size: 14px;
+    width: 380px;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+
+#carousel {
+    position: relative;
+    overflow: hidden;  
+    margin-top: 10px;
+    /* width: 900px; */
+    width: 1300px;
+}
+
+#carousel-image-row {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 0px;
+    transition: 0.5s left;
+}
+
+.carousel-image img {
+    height: 100%;
+    width: auto;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+  
+#button-next,
+#button-previous {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}		
+/* VERSION 1 END */
+
+
+/* course work */
+.container4 {
+    background-color: black;
+    width: 100%;
+    height: 2200px;
+}
+
+#background4 {
+    color: white;
+    padding-top: 5%;
+    padding-left: 22%;
+    padding-right: 22%;
+}
+
+.grade {
+    font-family: 'Roboto';
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.majorbox {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart1 {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    font-size: 16px;
+}
+
+.cart2 {
+    /* width: 375px; */
+    width: 800px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    /* margin-left: auto; */
+    margin-left: 50px;
+    margin-right: auto;
+    text-align: left;
+    font-size: 16px;
+}
+
+.major {
+    font-family: 'Roboto';
+    font-size: 15px;
+    text-align: right;
+}
+
+.course-name {
+    color: #45b8ff;
+    font-family: 'Roboto';
+    font-size: 15px;
+    text-align: left;
+}
+
+.classes {
+    font-family: 'Roboto';
+    font-size: 15px;
+    text-align: left;
+}
+
+/* prof experience */
+.container6 {
+    background-color: #FFFFFF;
+    width: 100%;
+    height: 900px;
+    margin-bottom: 300px;
+}
+
+#background6 {
+    color: #74E3DD;
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: 100px;
+}
+
+.cart3 {
+    width: 500px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+
+}
+
+.cart4 {
+    /* width: 375px; */
+    width: 800px;
+    font-size: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    /* margin-left: auto; */
+    margin-left: 50px;
+    margin-right: auto;
+    text-align: left;
+    margin-top: 200px;
+}
+
+.pic-center2 {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    filter: brightness(100%);
+}
+
+.pic-center3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.classes2 {
+    font-family: 'Roboto';
+    font-size: 25px;
+    text-align: left;
+}
+
+/* resume */
+.container5 {
+    background-color: #1A4F6D;
+    width: 100%;
+    height: 1100px;
+}
+
+#background5 {
+    color: white;
+    padding-top: 5%;
+    padding-left: 22%;
+    padding-right: 22%;
+}
+
+.grade2 {
+    font-family: 'Roboto';
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 100px;
+
+}
+
+.pdfresume {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}

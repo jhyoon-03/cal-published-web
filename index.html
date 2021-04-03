@@ -1,0 +1,637 @@
+<!-- CAL PROJECT HOME PAGE -->
+<!DOCTYPE html>
+<html>
+<head>     
+    <title>JJE</title>
+    <link rel = "stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- home page -->
+    <div class="container1">  
+        <img src="assets/img/jihee.png" class="pic-center">
+        <div class="bottom-left">
+            <p id="name">JJE INSURANCE</p>
+            <p id="blurb">United States Division, Casualty Actuarial Society <br> Business Insurance in Residential Insurance, San Francisco | Est. 1877 <br> University of California, Berkeley | Eric Jung, Jay Lee, Jihee Yoon</p>
+            <button id="linkedinButton"><img src="assets/img/linkedin.png" height=20px width=20px></button>
+            <button id="emailButton"><img src="assets/img/email.png" height=20px width=20px></button>    
+            </div>
+        </div>
+    </div>
+
+    <!-- logo -->
+    <div class = "main">
+        <header>
+            <a href="#top"><div id="logo">JJE</div></a>
+        </header>
+    </div> 
+
+    <!-- background -->
+    <div class="container2">
+        <div id="background2">
+            <p class="heading">Our History</p>
+            <p id="content"> As a multinational conglomerate holding company, JJE Insurance’s roots trace back to 1877. <br> <br> 
+
+                Immersed in the insurance industry, we offer an array of services that help our clients thrive amid rapid change.<br> <br> 
+                In 2020, JJE Insurance had a market capitalization of close to $552 billion and remains gratefully one of the top largest publicly traded companies worldwide. We believe in using data science, statistics, and computer science to emerge new discoveries that spark value in our world. <br> <br> 
+            
+                Details on analytics, visualizations, and business thinking regarding residential properties in San Francisco will be found below. 
+                You may arrange an appointment with us via email, indicated above. Thank you.
+                </p>
+        </div>
+    </div>
+
+    <!-- resume -->
+    <div class="container5">
+        <div id="background5">
+            <p class="heading">Analytics</p>
+            <p class="grade2">After inspecting the data provided, the following basic statistics about the listings from 2015 to 2020: There are a total of 17412 distinct listings in our database spread out across 37 neighbourhoods. The listed properties are largely residential with apartments and houses being the super majority of the listings in all years. In total, during this time frame the properties have taken in $1645522200 for an average income of $94505 per property. For a more granular view into monthly average income of each neighbourhood please refer to Appendix A. <br> <br> 
+                The neighbourhood with the lowest average income per month is Treasure Island with $30448 in monthly rent, whereas the highest is the mission district with an average income of $4761328. Meanwhile, considering the average property in each neighbourhood, Treasure Island maintains the lowest average income per property at an average of $3393 while Golden Gate Park has the highest average income with $7712 per property per month. The aforementioned Mission district ranks 20th with an average income per property per month of $5461.  <br> <br> 
+                While there are many popular properties in most neighbourhoods, we have chosen to list the ids of one of the most popular properties in each neighbourhood in appendix B. The rating of the properties seems to have a slight positive correlation with the annual rental income of the listings with an average of $56 increase in income for every rating point. The lowest rating is 20 with an average annual income of $17118.5 while the highest rating is 99 with an average income of $38161.45. Further information on the incomes of different rating scores can be found in appendix C.  <br> <br> 
+                By using linear regression to map the average ratings of each rental property (review_scores_rating)  to their average yearly availability (availability_365) from listings2015, listings2017, and listings2019, we found that an increase in one rating point correlated with a two day decrease in the availability of a property. A reasonable conclusion would be that highly rated properties are sought after more and thus less available. <br> <br> 			
+                    Using Euclidean distance with the latitude and longitude coordinates of the rental properties, we found that the Salesforce Transit Center had the most rental properties closest to it at 6047 properties, but San Francisco City Hall was close behind at 5977 properties. As to the other two broker locations, UCSF and San Francisco State University had 4234 and 1154 properties closest to them, respectively.  As Salesforce Transit Center and San Francisco City Hall are at the heart of the city, they are naturally surrounded by more rental properties.		
+                </p>
+        
+            <div class="pdfresume">
+                <!-- <object data="assets/files/schemas.sql"  ALIGN="CENTER" width=600px height=800px></object> -->
+            </div>
+    </div>
+
+    <!-- visualization 1 -->
+    <div class="container3">
+        <div id="background3">
+            <p id="projects">Spatial Visualizations & Additional Findings</p> 
+            <p id="projects2">Properties, corresponding neighborhoods, business opportunity, core components, and book of business and additional findings </p>
+        </div>
+        
+        <div id="carousel">
+            <div id="carousel-controls">
+                <button id="button-previous" class="hidden">
+                    <img src="assets/img/previous.png" alt="Previous">
+                </button>
+                <button id="button-next">
+                    <img src="assets/img/next.png" alt="Next">
+                </button>
+            </div>
+
+            
+            <div id="carousel-image-row">
+<!-- Bullet 1 -->
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">Interactive Mapbox Plot</h1>
+                        <h2 class="role">Hover over points on map to view details <br> By neighbourhood, displays all properties</h2>
+                        <p class="explain">Using a mapbox token infrastructure, visualized an interactive plot. 
+                            Hovering over each point displays neighbourhood cleansed, latitude, longitude, price, property type, 
+                            and review scores ratings for each property. <br><br> Bullet 1 </p>
+                    </div>
+                    
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="example2.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">Properties with Neighbourhood Outlines</h1>
+                        <h2 class="role">Scroll through map to view legend and axes <br> Displays all properties and neighbourhoods </h2>
+                        <p class="explain">With sublots and the geodataframe, visualized all properties with each neighbourhood 
+                            shaded with black boundary outlines. The latitude and longitude axis  
+                            allow easier view for the properties and neighbourhoods. <br> <br>
+                            To interact with map, click on the map and then scroll around. <br><br> For Bullet 1 cont. </p>  
+                   </div>    
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="assets/img/vis1_eric.png" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">Neighbourhood Outlines</h1>
+                        <h2 class="role">Scroll through map to view legend and axes <br> Displays all neighbourhoods</h2>
+                        <p class="explain">Visualized all neighbourhoods using different colors, as referenced in the legend, 
+                            with sublots and the geodataframe. The latitude and longitude axis  
+                            indicates location geographically with convenience. <br> <br>
+                            To interact with map, click on the map and then scroll around. <br><br> For Bullet 1 cont.</p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="assets/img/vis1_eric2.png" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+<!-- Bullet 3 -->
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2015 Heatmap</h1>
+                        <h2 class="role">Heatmap of average price by id from listings <br> Displays all properties</h2>
+                        <p class="explain">Hovering displays the price, latitude, and longitude of each property from 2015. The more yellow the color, the higher the price, as according to the legend on the right. <br> <br>
+                            Bullet 3</p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="2015heatmap.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2015 Average Rent Price by Neighbourhood Cleansed </h1>
+                        <h2 class="role">List of average rent prices by neighbourhood_cleansed in decreasing order </h2>
+                        <p class="explain">Pacific Heights, South of Market, and Presidio have the highest average rent prices, and 
+                            Ocean View, Crocker Amazon, and Visitacion Valley have the lowest average rent prices. <br> <br>
+                            For Bullet 3 cont. </p>
+                    </div>
+                    <div class="some-text2">
+                        <img src="assets/img/2015df.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2015 Density of Listings for each Neighbourhood Cleansed</h1>
+                        <h2 class="role">List of densities for each neighbourhood cleansed in decreasing order </h2>
+                        <p class="explain">Mission, Western Addiction, and South of Market have the highest density, and 
+                            Seacliff, Presidio, and Treasure Island/YBI have the lowest density. <br> <br>
+                            For Bullet 3 cont.</p>
+                    </div>
+                    <div class="some-text2">
+                        <img src="assets/img/2015df2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2017 Heatmap</h1>
+                        <h2 class="role">Heatmap of average price by id from listings <br> Displays all properties</h2>
+                        <p class="explain">Hovering displays the price, latitude, and longitude of each property from 2017. The more yellow the color, the higher the price, as according to the legend on the right. <br> <br>
+                            For Bullet 3 cont. </p>
+                    </div> 
+                    <!-- <img src="assets/img/2015df.png" alt=""> -->
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="2017heatmap.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2017 Average Rent Price by Neighbourhood Cleansed </h1>
+                        <h2 class="role">List of average rent prices by neighbourhood_cleansed in decreasing order </h2>
+                        <p class="explain">Seacliff, Presidio, and Presidio Heights have the highest average rent prices, and 
+                            Visitacion Valley, Bayview, and Excelsior have the lowest average rent prices. <br> <br>
+                            For Bullet 3 cont.</p>
+                    </div>
+                    <div class="some-text2">
+                        <img src="assets/img/2017df.png" alt="">
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2017 Density of Listings for each Neighbourhood Cleansed</h1>
+                        <h2 class="role">List of densities for each neighbourhood cleansed in decreasing order </h2>
+                        <p class="explain">Mission, Western Addiction, and Castro/Upper Market have the highest density, and 
+                            Presidio, Golden Gate Park, and Treasure Island/YBI have the lowest density. <br> <br>
+                            For Bullet 3 cont.</p>
+                    </div>
+                    <div class="some-text2">
+                        <img src="assets/img/2017df2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Heatmap</h1>
+                        <h2 class="role">Heatmap of average price by id from listings <br> Displays all properties</h2>
+                        <p class="explain">Hovering displays the price, latitude, and longitude of each property from 2019. The more yellow the color, the higher the price, as according to the legend on the right. <br> <br>
+                            For Bullet 3 cont.</p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="2019heatmap.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Average Rent Price by Neighbourhood Cleansed</h1>
+                        <h2 class="role">List of average rent prices by neighbourhood_cleansed in decreasing order </h2>
+                        <p class="explain">Presidio Heights, South of Market, and Russian Hill have the highest average rent prices, and 
+                            Excelsior, Presidio, and Crocker Amazon have the lowest average rent prices. <br> <br>
+                            For Bullet 3 cont.</p>
+                    </div>
+                    <div class="some-text2">
+                        <img src="assets/img/2019df.png" alt="">
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Density of Listings for each Neighbourhood Cleansed</h1>
+                        <h2 class="role">List of densities for each neighbourhood cleansed in decreasing order </h2>
+                        <p class="explain">Mission, Western Addiction, and Castro/Upper Market have the highest density, and 
+                            Lakeshore, Presidio, and Golden Gate Park have the lowest density. <br> <br>
+                            For Bullet 3 cont.</p>
+                    </div>
+                    <div class="some-text2">
+                        <img src="assets/img/2019df2.png" alt="">
+                    </div>
+                </div> 
+
+<!-- Bullet 2 -->
+                <!-- jan -->
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of January by Properties</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties (using availability==false)</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude each property. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="jan_id.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of January by Neighbourhoods</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties by Neighbourhood</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude for each neighbourhood cleansed. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="jan_neigh.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- feb -->
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of February by Properties</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties (using availability==false)</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude each property. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="feb_id.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of February by Neighbourhoods</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties by Neighbourhood</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude for each neighbourhood cleansed. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="feb_neigh.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- march -->
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of March by Properties</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties (using availability==false)</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude each property. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="mar_id.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of March by Neighbourhoods</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties by Neighbourhood</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude for each neighbourhood cleansed. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="mar_neigh.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- april -->
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of April by Properties</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties (using availability==false)</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude each property. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="apr_id.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of April by Neighbourhoods</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties by Neighbourhood</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude for each neighbourhood cleansed. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="apr_neigh.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- may -->
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of May by Properties</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties (using availability==false)</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude each property. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="may_id.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of May by Neighbourhoods</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties by Neighbourhood</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude for each neighbourhood cleansed. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="may_neigh.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- june -->
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of June by Properties</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties (using availability==false)</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude each property. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="jun_id.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of June by Neighbourhoods</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties by Neighbourhood</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude for each neighbourhood cleansed. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="jun_neigh.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- july -->
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of July by Properties</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties (using availability==false)</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude each property. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="jul_id.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of July by Neighbourhoods</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties by Neighbourhood</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude for each neighbourhood cleansed. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="jul_neigh.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- august -->
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of August by Properties</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties (using availability==false)</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude each property. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="aug_id.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of August by Neighbourhoods</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties by Neighbourhood</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude for each neighbourhood cleansed. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="aug_neigh.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- sept -->
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of September by Properties</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties (using availability==false)</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude each property. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="sept_id.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of September by Neighbourhoods</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties by Neighbourhood</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude for each neighbourhood cleansed. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="sept_neigh.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- oct -->
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of October by Properties</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties (using availability==false)</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude each property. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="oct_id.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of October by Neighbourhoods</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties by Neighbourhood</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude for each neighbourhood cleansed. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="oct_neigh.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- nov -->
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of November by Properties</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties (using availability==false)</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude each property. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="nov_id.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of November by Neighbourhoods</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties by Neighbourhood</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude for each neighbourhood cleansed. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="nov_neigh.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- dec -->
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of December by Properties</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties (using availability==false)</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude each property. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="dec_id.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="carousel-image">
+                    <div class="some-text">
+                        <h1 class="title">2019 Month of December by Neighbourhoods</h1>
+                        <h2 class="role">Sum of Commercial Income from Rented Properties by Neighbourhood</h2>
+                        <p class="explain">Interactive heatmap and hovering provides details on price, latitude, and longitude for each neighbourhood cleansed. </p>
+                    </div>
+                    <div class="some-text2">
+                        <iframe type="video/webm" src="dec_neigh.html" width="800" height="415" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>     
+
+    </div> 
+
+
+
+    <!-- course work -->
+    <div class="container4">
+        <div id="background4">
+            <p class="heading">Business Analysis</p>
+            <p class="grade">Understanding our company data and commercial rental policies with actual
+                business risk management and underwriting strategy for business interruption policies <br> </p>
+        
+            <div class="majorbox">
+                <div class="cart1">
+                    <p class="major">Context</p>
+                </div>
+                <div class="cart2">
+                    <p class="classes">
+                        Due to the exorbitant nature of rental properties, JJE will determine the price of premiums for each property based on their risks of experiencing business interruptions that impact rental incomes, such as natural disasters or power outages. We determine the likelihood of business interruptions based on neighborhood densities, property values, and the number and scores of property reviews. JJE intends to achieve low loss ratios (total claims / total premiums) by first molding our book of business to be composed of low-risk clients and then charging premiums proportionate to a property’s risk of a business interruption.</p>
+                </div>
+            </div>
+
+            <div class="majorbox">
+                <div class="cart1">
+                    <p class="major">Strategies for Business Interruptions</p>
+                </div>
+                <div class="cart2">
+                    <p class="classes">	From the data JJE has studied, we believe that it is beneficial to have a low-density book of business to lower the risk of an all-encompassing business interruption such as power outages. As power outages are more likely local then citywide due to the structure of our electrical grid, we conclude that diversifying our reach into multiple neighborhoods will allow us to mitigate the loss from potential claims. Similarly, claims from damages caused by other local interruptions such as floods or fires can also be reduced when pursuing a low density book of business as more properties will remain untouched. <br> <br> 
+                        JJE also believes in primarily insuring properties below the 75th percentile in weekly rents as higher rents mean higher claims when rental income is affected by a business interruption. As such, we intend to target clients in a variety of working to upper-middle class neighborhoods to ensure both low density and cheaper claims paid. Among the properties we do insure, we will scale the premiums proportionately to the monthly rents, so a property with a monthly rent price of $3000 would expect to pay double the premium of a property with a rent price of $1500.  <br> <br> 
+                        In addition to property values and locations, we realize that the ratings of a property can also be revealing in a risk assessment. If a property is rented more, its exposure to potential business interruptions is increased and thus its premium must be accordingly increased. A large number of reviews, favorable or unfavorable, tells us that a property has been rented many times and thus will likely to be rented continuously in the future, which would warrant a higher premium. Similarly, a high average review score rating indicates that a property is popular and will likely be rented more in the future as well. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="majorbox">
+                <div class="cart1">
+                    <p class="major">Anomalies and Patterns in the Data</p>
+                </div>
+                <div class="cart2">
+                    <p class="classes">	Of the properties that are listed in the data, we noticed an incredibly high number of apartments, 4043 to be exact, as compared to the other 837 houses, 136 lofts, and 130 condos. We believe that this is simply the result of San Francisco being a densely populated urban city which implies that most of its homes will be an apartment in a multi-floor building. This also explains why there are so many rental properties in the heart of San Francisco but so few in the outer echelons such as Bayview. We believe that downtown of an urban city will have more rental properties as younger people will reside there while the suburban outer rings will have less rentals as people begin to invest in multi-generational homes, hence the density of rental properties in downtown San Francisco.  <br> <br>
+                        We also realize that there is an inherent lack of residential areas near Golden Gate Park simply due to the fact that the park is a large non-residential area. In our visualization of all the rental properties categorized by neighborhoods, a rectangular void can be seen in the place of Golden Gate Park. Another similar area is the Presidio where most of the land is greenery and landmarks.
+                    </p>
+                </div>
+            </div>
+
+            <div class="majorbox">
+                <div class="cart1">
+                    <p class="major">Property Policy Recommendations</p>
+                </div>
+                <div class="cart2">
+                    <p class="classes">	If we are to augment coverage with property policy, our preferred clientele would be of mid value rental properties located in more expensive neighborhoods. We expect that rental properties with monthly rent prices between the 25th and 75th percentiles to incur less claims as these properties are less likely to experience water damages or poor structural integrity than very cheap ones. Even though properties with rent prices above the 75th percentile are also less prone to claims, we believe that the risk of other factors such as natural disasters would cause a high loss ratio. <br> <br> 
+                        Since more expensive neighborhoods, or neighborhoods with higher average monthly rents, typically have better infrastructure and lower crime rates and thus at lower risks of property damage, we recommend focusing on clients in these neighborhoods to achieve a low loss ratio.   <br> <br> 
+                    With respect to the location of properties, we would suggest avoiding waterfront properties as salt water is known to corrode metal and also accumulate in ducts and filters, which can be common causes of claims.  <br> <br> 
+                    Similar to our strategy for business interruptions, premiums for property policy should be scaled proportionately with the value of each property in order to maintain a low loss ratio.
+                    </p>
+                </div>
+            </div>
+
+            <div class="majorbox">
+                <div class="cart1">
+                    <p class="major">Future Projects</p>
+                </div>
+                <div class="cart2">
+                    <p class="classes">	In the future, JJE would like to refine our business strategies with the use of additional data. Our fundamental goal of finding the ideal clientele and achieving low loss ratios will remain unchanged but our analysis may change depending on new data. <br> <br> 
+                        Data such as the history of each property’s claims, the collection of all business interruptions in the last five years, and rental information for certain months missing from the current data package would help us determine optimal premium rates and clients. In particular,  having access to data on all claims in recent years would greatly impact our analysis since it would allow us to gauge not only the frequency of different types of business interruptions but also the claim amounts that will determine our premium rates.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- prof experience -->
+    <div class="container6">
+        <div id="background6">
+            <p class="heading">Meet the Team</p>
+            <!-- <img src="assets/img/jihee_face.png" class="pic-center2" width = 150 height = 150> -->
+            
+            <div class="majorbox">
+                <div class="cart3">
+                    <p class="major"></p>
+                    <img src="assets/img/eric.png" class="pic-center2" width = 300 height = 300>
+            
+                </div>
+                <div class="cart4">
+                    <p class="classes2">	Eric Jung, P&C Actuary </p>
+                </div>
+            </div>
+
+            <div class="majorbox">
+                <div class="cart3">
+                    <p class="major"></p>
+                    <img src="assets/img/jihee_face.png" class="pic-center2" width = 300 height = 300>
+            
+                </div>
+                <div class="cart4">
+                    <p class="classes2">	Jihee Yoon, P&C Actuary </p>
+                </div>
+            </div>
+            
+            <div class="majorbox">
+                <div class="cart3">
+                    <p class="major"></p>
+                    <img src="assets/img/jay.png" class="pic-center2" width = 300 height = 300>
+            
+                </div>
+                <div class="cart4">
+                    <p class="classes2">	Jay Lee, P&C Actuary </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
